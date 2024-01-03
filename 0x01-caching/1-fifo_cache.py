@@ -27,4 +27,4 @@ class FIFOCache(BaseCaching):
         """ retrieves the items associated with key """
 
         if key:
-            return self.cachhe_data.get(key)
+            return self.cache_data.get(key)

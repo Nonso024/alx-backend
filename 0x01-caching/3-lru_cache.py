@@ -8,7 +8,7 @@ class LRUCache(BaseCaching):
     """ this class implememnts the LRU caching algorithm """
 
     def __init__(self):
-        """ initialixes a class instance """
+        """ initializes a class instance """
 
         super().__init__()
         self.cache_queue = {}
@@ -23,7 +23,7 @@ class LRUCache(BaseCaching):
                 discard = min(self.cache_queue, key=self.cache_queue.get)
                 del self.cache_data[discard]
                 del self.cache_queue[discard]
-                print("DISCARD: {}".format(disard))
+                print("DISCARD: {}".format(discard))
 
     def get(self, key):
         """ retrieves item associated with key """
